@@ -11,7 +11,7 @@ const description = document.querySelector('#description')
 const drops = document.querySelector('#amount')
 const watchedBtn = document.querySelector('#watched')
 const form = document.querySelector('#blood-form')
-console.log('form: ', form);
+// console.log('form: ', form);
 const bloodInput = document.querySelector('#blood-amount')
 
 // Event listeners
