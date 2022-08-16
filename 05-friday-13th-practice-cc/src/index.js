@@ -1,6 +1,6 @@
 // Globals
 const URL = "http://localhost:3000/movies"
-let selectedMovie;
+let selectedMovie; // I'm declaring this in global scope because I want more than one function to have access to it, but I have no value to assign it yet, so I have to use 'let'
 
 // DOM Selectors
 const nav = document.querySelector('#movie-list')
@@ -16,16 +16,17 @@ const bloodInput = document.querySelector('#blood-amount')
 
 // Event listeners
 watchedBtn.addEventListener('click', toggleWatched)
-form.addEventListener('submit', addBlood)
+form.addEventListener('submit', addBlood) // if you just reference the callback function without calling it, addEventListener will call it when it is triggered
+        // and automatically pass to the function the event that triggered it
 
 // Fetchers
 function getAllMovies(url){
     return fetch(url)
         .then(res => res.json())
-        .then(movies => {
-            iterateMovies(movies)
-            renderDetail(movies[0])
-        })
+        .then(movies => { // on a refactor, I would move this .then()
+            iterateMovies(movies) // and these 2 functions down and 
+            renderDetail(movies[0]) // chain them on the call to getAllMovies()
+        })                          // in Intializers (line 82)
 }
 
 // Render functions
@@ -50,17 +51,18 @@ function renderDetail(movObj){
     year.textContent = movObj.release_year
     description.textContent = movObj.description
     drops.textContent = movObj.blood_amount
-    let watchVal
-    movObj.watched ? watchVal = "Watched" : watchVal = "Unwatched"
+    // let watchVal
+    // movObj.watched ? watchVal = "Watched" : watchVal = "Unwatched"
+    let watchVal = movObj.watched ? "Watched" : "Unwatched"
     watchedBtn.textContent = watchVal
 
 }
 
 // Event handlers
 function toggleWatched(){
-    console.log(selectedMovie)
-    selectedMovie.watched = !selectedMovie.watched
-    if (selectedMovie.watched) {
+    selectedMovie.watched = !selectedMovie.watched // since .watched is a bool, this line just flips true to false or false to true
+    // this if-block does the same as lines 56-7 which use a ternary
+    if (selectedMovie.watched) { // again, since .watched is already bool, don't need more in condition
         watchedBtn.textContent = "Watched"
     } else {
         watchedBtn.textContent = "Unwatched"
