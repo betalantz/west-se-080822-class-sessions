@@ -4,16 +4,19 @@ let selectedMovie;
 
 // DOM Selectors
 const nav = document.querySelector('#movie-list')
-console.log('nav: ', nav);
 const detailImg = document.querySelector('#detail-image')
 const title = document.querySelector('#title')
 const year = document.querySelector('#year-released')
 const description = document.querySelector('#description')
 const drops = document.querySelector('#amount')
 const watchedBtn = document.querySelector('#watched')
+const form = document.querySelector('#blood-form')
+console.log('form: ', form);
+const bloodInput = document.querySelector('#blood-amount')
 
 // Event listeners
 watchedBtn.addEventListener('click', toggleWatched)
+form.addEventListener('submit', addBlood)
 
 // Fetchers
 function getAllMovies(url){
@@ -62,6 +65,17 @@ function toggleWatched(){
     } else {
         watchedBtn.textContent = "Unwatched"
     }
+}
+
+function addBlood(e){
+    e.preventDefault()
+    console.dir(e.target);
+    console.log('bloodInput: ', bloodInput.value, typeof bloodInput.value)
+    // const newBlood = parseInt(bloodInput.value)
+    const newBlood = Number(bloodInput.value)
+    selectedMovie.blood_amount += newBlood
+    renderDetail(selectedMovie)
+    form.reset()
 }
 
 // Initializer(s)

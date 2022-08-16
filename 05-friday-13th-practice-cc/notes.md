@@ -20,6 +20,11 @@ As a user, I can:
  - [x] cb needs a conditional that will set the button text
  - [x] cb will also flip the value of "watched" for the detail movie obj
 5. Enter a number of drops for each movie and have it persist in the DOM
+   - [x] add listener to form
+   - [x] preventDefault on form
+   - [x] get value of input from form
+   - [x] increment `blood_amount` of `selectedMovie` with input value
+   - [x] update the DOM
 
 ## Data shape
 ```javascript
