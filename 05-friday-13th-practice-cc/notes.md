@@ -7,8 +7,18 @@ As a user, I can:
   - [x] Create <img> for each movie
   - [x] Append each <img> to nav
 2. View the 1st movie details on page load
+  - [x] Select the right elements from the DOM
+  - [x] Set the element attributes with the movie data
+  - [x] get 1st movie obj from movieArr and send to render fn
 3. Click a movie in the nav and see it's details in the detail section
+  - [x] add listener to each <img> in nav
+  - [x] use detail render fn from above
+  - [x] listener passes obj to render fn
+  - [x] render fn sets attr of detail elements with obj values
 4. Click a "watched" button which toggles and persists only in the DOM
+ - [x] add listener to button
+ - [x] cb needs a conditional that will set the button text
+ - [x] cb will also flip the value of "watched" for the detail movie obj
 5. Enter a number of drops for each movie and have it persist in the DOM
 
 ## Data shape
