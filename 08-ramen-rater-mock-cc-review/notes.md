@@ -20,9 +20,9 @@ As a user I can
  - [x] add ramen to menu
 
 ## Advanced Deliverables
-- see details of first ramen on page load
+- [x] see details of first ramen on page load
 - Change the rating and comment with an edit form (no persistence)
-- Delete a ramen from menu (no persistence)
+- [x] Delete a ramen from menu (no persistence)
 
 ## Extra Deliverables
 - add persistence to above where possible
