@@ -6,11 +6,11 @@ As a user, I can:
   - [x] add data from fetch to those elements
   - [x] to show comments array, iterate it and create <p> and append
 2. add a new comment to comment section by submitting form
-  - [] select form
-  - [] add listener to form
-  - [] preventDefault form on event
-  - [] create new <p> and give it text from form
-  - [] append <p> to 
+  - [x] select form
+  - [x] add listener to form
+  - [x] preventDefault form on event
+  - [x] create new <p> and give it text from form
+  - [x] append <p> to 
 3. click a button to buy a ticket, and see the total number of tickets bought
   - [] select the buy-ticket button
   - [] add listener to button

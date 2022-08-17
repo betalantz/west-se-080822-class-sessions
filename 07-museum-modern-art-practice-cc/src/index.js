@@ -7,11 +7,12 @@ const tixBtn = document.querySelector('#buy-tickets-button')
 const tixBought = document.querySelector('#tickets-bought')
 const description = document.querySelector('#exhibit-description')
 const container = document.querySelector('#comments-section')
-console.log('container: ', container);
 const form = document.querySelector('#comment-form')
+console.log('form: ', form);
 const image = document.querySelector('#exhibit-image')
 
 // Listeners
+form.addEventListener('submit', handleSubmit)
 
 // Fetches
 function getAllExhibits(url){
@@ -22,21 +23,31 @@ function getAllExhibits(url){
 // Render Functions
 
 function displayExhibit(exhibitObj){
-    console.log('exhibitObj: ', exhibitObj);
+    
     title.textContent = exhibitObj.title
     description.textContent = exhibitObj.description
     image.src = exhibitObj.image
-    console.log(exhibitObj.comments)
+    
     exhibitObj.comments.forEach(comment => addComment(comment))
 }
 
 // Event handlers
 function addComment(commentStr){
-    console.log('commentStr: ', commentStr);
     const newComment = document.createElement('p')
     newComment.textContent = commentStr
-    console.log('newComment: ', newComment);
     container.append(newComment)
+}
+
+function handleSubmit(e){
+    e.preventDefault()
+    console.dir(e.target)
+    console.log(e.target["commentInput"].value)
+    const commentTxt = e.target.commentInput.value
+    // const newComment = document.createElement('p')
+    // newComment.textContent = commentTxt
+    // container.append(newComment)
+    addComment(commentTxt)
+    form.reset()
 }
 
 
