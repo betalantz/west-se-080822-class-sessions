@@ -6,10 +6,12 @@ const menu = document.querySelector('#ramen-menu')
 const detail = document.querySelector('#ramen-detail')
 const rating = document.querySelector('#rating-display')
 const comment = document.querySelector('#comment-display')
+const form = document.querySelector('#new-ramen')
+console.log('form: ', form);
+
 
 // Event Listeners
-
-
+form.addEventListener('submit', e => handleSubmit(e))
 // Fetches
 function getAllRamens(url){
     return fetch(url + `/ramens`)
@@ -41,6 +43,22 @@ function renderRamenDetail(ramenObj){
 }
 
 // Event Handlers
+function handleSubmit(e){
+    e.preventDefault()
+    const name = e.target.name.value
+    const restaurant = e.target.restaurant.value
+    const image = e.target.image.value
+    const rating = e.target.rating.value
+    const comment = e.target["new-comment"].value
+    const newRamen = {
+        name,
+        image,
+        restaurant,
+        rating,
+        comment
+    }
+    renderRamenMenu(newRamen)
+}
 
 
 // Initializers

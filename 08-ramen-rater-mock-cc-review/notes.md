@@ -11,13 +11,13 @@ As a user I can
   - [x] select correct elements
   - [x] update their attributes with selected ramen data
 - Submit a form to create a new ramen in the menu (no persistence!)
- - [] select the form
- - [] attach a listener
- - [] handle the event
- - [] preventDefault()
- - [] access the user data from form
- - [] use the data to create a new ramen
- - [] add ramen to menu
+ - [x] select the form
+ - [x] attach a listener
+ - [x] handle the event
+ - [x] preventDefault()
+ - [x] access the user data from form
+ - [x] use the data to create a new ramen
+ - [x] add ramen to menu
 
 ## Advanced Deliverables
 - see details of first ramen on page load
