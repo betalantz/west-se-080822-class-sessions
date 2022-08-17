@@ -6,10 +6,10 @@ As a user I can
   - [x] create <img> for each ramen
   - [x] append to menu
 - Click on a menu img to see the details of a ramen displayed in detail section
-  - [] attach event listeners
-  - [] handle click events
-  - [] select correct elements
-  - [] update their attributes with selected ramen data
+  - [x] attach event listeners
+  - [x] handle click events
+  - [x] select correct elements
+  - [x] update their attributes with selected ramen data
 - Submit a form to create a new ramen in the menu (no persistence!)
  - [] select the form
  - [] attach a listener
