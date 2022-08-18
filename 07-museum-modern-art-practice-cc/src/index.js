@@ -1,5 +1,6 @@
 // Globals
 const URL = "http://localhost:3000/current-exhibits"
+let selectedExhibit
 
 // DOM Selectors
 const title = document.querySelector('#exhibit-title')
@@ -13,6 +14,7 @@ const image = document.querySelector('#exhibit-image')
 
 // Listeners
 form.addEventListener('submit', handleSubmit)
+tixBtn.addEventListener('click', buyTicket)
 
 // Fetches
 function getAllExhibits(url){
@@ -23,11 +25,11 @@ function getAllExhibits(url){
 // Render Functions
 
 function displayExhibit(exhibitObj){
-    
+    selectedExhibit = exhibitObj
     title.textContent = exhibitObj.title
     description.textContent = exhibitObj.description
     image.src = exhibitObj.image
-    
+    tixBought.textContent = `${exhibitObj.tickets_bought} Tickets Bought`
     exhibitObj.comments.forEach(comment => addComment(comment))
 }
 
@@ -48,6 +50,11 @@ function handleSubmit(e){
     // container.append(newComment)
     addComment(commentTxt)
     form.reset()
+}
+
+function buyTicket(){
+    selectedExhibit.tickets_bought += 1
+    displayExhibit(selectedExhibit)
 }
 
 

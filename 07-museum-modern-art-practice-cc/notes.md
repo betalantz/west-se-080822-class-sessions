@@ -12,15 +12,15 @@ As a user, I can:
   - [x] create new <p> and give it text from form
   - [x] append <p> to 
 3. click a button to buy a ticket, and see the total number of tickets bought
-  - [] select the buy-ticket button
-  - [] add listener to button
-  - [] increment the total ticket amount
-  - [] update a DOM element with new ticket amount
+  - [x] select the buy-ticket button
+  - [x] add listener to button
+  - [x] increment the total ticket amount
+  - [x] update a DOM element with new ticket amount
 
 ## Bonus Deliverables
 1. when I click button to buy an exhibit ticket, it perisists for that exhibit
   - [] make a PATCH request which updates the right exhibitObj with new value for `tickets_bought`
-  - [] ? make ticket bought display dependent on data
+  - [x] ? make ticket bought display dependent on data
 2. when I add a new comment, it persists for that exhibit
   - [] make a PATCH request which updates the correct exhibitObj and adds the new comment to the existing comment array
 
