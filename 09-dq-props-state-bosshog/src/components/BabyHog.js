@@ -18,7 +18,7 @@ function BabyHog(props) {
   const {eyeColor, hobby, name} = props
 
   function handleChangeWeight(e) {
-    console.log('e: ', e.target.name);
+    // console.log('e: ', e.target.name);
 
     const newWeight = e.target.name === "+" ? weight + 10 :  weight - 10
     // if (e.target.name === "+") {
