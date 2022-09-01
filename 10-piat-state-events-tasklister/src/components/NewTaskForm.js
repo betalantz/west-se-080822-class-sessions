@@ -9,7 +9,7 @@ function NewTaskForm({ categories, onFormSubmit }) {
 
   function handleSubmit(e){
     e.preventDefault()
-    onFormSubmit({ text, category })
+    onFormSubmit({ text, category }) // compose new task object, uses ES6 shorthand for { text: text, category: category}
     setText("")
     setCategory("Code")
   }
