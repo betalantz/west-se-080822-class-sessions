@@ -10,12 +10,19 @@ import { CATEGORIES, TASKS } from "../data";
 function App() {
   const [tasks, setTasks] = useState(TASKS)
 
+  function handleDelete(taskText){
+    console.log('taskText: ', taskText);
+    const filteredArr = tasks.filter(task => task.text !== taskText)
+    setTasks(filteredArr)
+
+  }
+
   return (
     <div className="App">
       <h2>My tasks</h2>
       <CategoryFilter />
       <NewTaskForm />
-      <TaskList tasks={tasks}/>
+      <TaskList tasks={tasks} onDelete={handleDelete}/>
     </div>
   );
 }
