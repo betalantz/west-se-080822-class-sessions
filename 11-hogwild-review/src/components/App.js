@@ -1,12 +1,15 @@
-import React from "react";
-import Nav from "./Nav";
+import React, { useState } from "react";
+import Header from './Header'
+import HogList from './HogList'
 
-import hogs from "../porkers_data";
+import hogsData from "../porkers_data";
 
 function App() {
+	const [hogs, setHogs] = useState(hogsData)
 	return (
 		<div className="App">
-			<Nav />
+			<Header />
+			<HogList hogs={hogs} />
 		</div>
 	);
 }
