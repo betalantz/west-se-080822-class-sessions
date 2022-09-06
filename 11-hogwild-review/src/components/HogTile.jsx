@@ -3,9 +3,12 @@ import HogDetail from './HogDetail'
 
 export default function HogTile({ hog }) {
   const [showDetails, setShowDetails] = useState(false)
+  const [isHidden, setIsHidden] = useState(false)
   const { name, image} = hog
 
 //   console.log('image: ', image);
+  if (isHidden) return null;
+  
   return (
     <div className="ui card eight wide column pigTile">
       <div className="image">
@@ -21,12 +24,12 @@ export default function HogTile({ hog }) {
       >
         {showDetails ? "Less Info" : "More Info"}
       </button>
-      {/* <button className="ui button" onClick={() => setIsHidden(true)}>
+      <button className="ui button" onClick={() => setIsHidden(true)}>
         Hide Me{" "}
         <span role="img" aria-label="snout">
           🐽
         </span>
-      </button> */}
+      </button>
     </div>
   )
 }

@@ -6,11 +6,11 @@ A user can:
 2. [x] Click a hog and see more details
  - HogDetail will be conditionally rendered as Child of HogTile
 3. [x] Click an checkbox and see only greased pigs
-4. [] Use a dropdown to sort by name or weight
+4. [x] Use a dropdown to sort by name or weight
 
 _Note:_ User can both filter and sort the filtered results.
 
-BONUS: Hide hogs (no persistance AND don't have to bring back!)
+BONUS: [x] Hide hogs (no persistance AND don't have to bring back!)
 - implement `semantic-ui` styling on card layout
 - Add new hogs using a form
 
