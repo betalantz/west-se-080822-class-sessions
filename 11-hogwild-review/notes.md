@@ -5,7 +5,7 @@ A user can:
  - "ui eight wide column" on children
 2. [x] Click a hog and see more details
  - HogDetail will be conditionally rendered as Child of HogTile
-3. [] Click an checkbox and see only greased pigs
+3. [x] Click an checkbox and see only greased pigs
 4. [] Use a dropdown to sort by name or weight
 
 _Note:_ User can both filter and sort the filtered results.
