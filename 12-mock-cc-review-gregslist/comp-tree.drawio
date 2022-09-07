@@ -52,7 +52,7 @@
                 <mxCell id="18" value="state: formSearch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="340" y="270" width="100" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="props: listings&lt;br&gt;props: deleteListing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="19" value="props: listings&lt;br&gt;props: deleteListing( )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="470" y="100" width="150" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" value="props: listing&lt;br&gt;props: deleteListing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
