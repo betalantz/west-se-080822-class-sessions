@@ -24,6 +24,7 @@ function Search({ onSearch }) {
       />
       <button type="submit">🔍</button>
     </form>
+    
   );
 }
 

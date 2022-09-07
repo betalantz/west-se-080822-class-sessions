@@ -40,7 +40,7 @@ As a user:
    change should be persisted in the backend.
    - click on icon fires DELETE fetch
    - remove correct listing from state with .filter
-4. I can search for listings by their name.
+4. [x] I can search for listings by their name.
   - search input controlled with state
   - apply search .filter to array of listings
 
@@ -91,8 +91,8 @@ them however you see fit!
 
 As a user:
 
-1. I can sort the listings alphabetically by location.
-2. I can create a new listing by submitting a form, and persist the changes to
+1. [x] I can sort the listings alphabetically by location.
+2. [x] I can create a new listing by submitting a form, and persist the changes to
    the backend.
 
 ### Endpoints for Advanced Deliverables

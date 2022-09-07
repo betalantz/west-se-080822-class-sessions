@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-function ListingCard({listing: {id, description, image, location}, onDelete}) {
+function ListingCard({listing: {id, description, image, location}, onDelete}) { // since I passed a whole object in the props object, I used nested destructuring, but there are other ways: props.listing.description, props.listing.image, props.listing.location etc
   
   const [isFavorite, setIsFavorite] = useState(false)
 
   function handleDelete(){
     onDelete(id)
+    // I could have done DELETE fetch here, but decided to keep all my fetching together on App
   }
 
   return (

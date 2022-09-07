@@ -35,6 +35,12 @@
       "description": "Beautiful couch",
       "image": "./images/couch.jpg",
       "location": "Bay Ridge"
+    },
+    {
+      "description": "Beautiful blue gardenhose",
+      "image": "https://images.pexels.com/photos/127944/pexels-photo-127944.jpeg?cs=srgb&dl=pexels-mike-b-127944.jpg&fm=jpg",
+      "location": "The Bronx",
+      "id": 7
     }
   ]
 }
