@@ -30,12 +30,19 @@ in the browser to verify that your backend is working before you proceed!
 
 As a user:
 
-1. When the app starts, I can see all listings.
+1. [x] When the app starts, I can see all listings.
+ - useEffect will do GET fetch of listings, put listings in state
+ - map over listings, to render each <ListingCard></ListingCard>
 2. I can "favorite" and "unfavorite" a listing on the frontend by clicking the
    star icon. This feature doesn't need backend persistence.
+   - <ListingCard> needs state for favorite
 3. I can remove a listing from the page by clicking the trash can icon. This
    change should be persisted in the backend.
+   - click on icon fires DELETE fetch
+   - remove correct listing from state with .filter
 4. I can search for listings by their name.
+  - search input controlled with state
+  - apply search .filter to array of listings
 
 ### Endpoints for Core Deliverables
 
