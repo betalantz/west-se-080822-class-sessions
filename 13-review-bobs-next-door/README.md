@@ -46,7 +46,7 @@ As a user, I should be able to:
   - map over array, pass props individually to each <Store>
 - [x] Fill out and submit the form to add a new store. This should add the new store to the table **as well as post the new store to the backend API for persistence**.
   - add state to form comp to make it controlled
-  - create addForm() on App and pass down as prop to Form
+  - create addStore() on App and pass down as prop to Form
   - on submit, do POST fetch with form input data
   - use cb to send response up to App and add to array in state
-- Filter stores by typing into the search bar. Only stores with a name matching the search term should be store in the table.
+- [x] Filter stores by typing into the search bar. Only stores with a name matching the search term should be displayed in the table.

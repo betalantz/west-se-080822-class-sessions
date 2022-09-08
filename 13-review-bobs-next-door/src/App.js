@@ -7,6 +7,7 @@ import StoreList from './components/StoreList';
 function App() {
 
   const [storesArr, setStoresArr] = useState([])
+  const [searchTerm, setSearchTerm] = useState("")
 
   useEffect(() => {
     fetch("http://localhost:8085/stores")
@@ -18,14 +19,16 @@ function App() {
     // console.log('newStoreObj: ', newStoreObj);
     setStoresArr([...storesArr, newStoreObj])
   }
+
+  const storesToDisplay = storesArr.filter(store => store.name.toLowerCase().includes(searchTerm.toLowerCase()))
   
   return (
     <div className="main-container">
       <img src="/images/bobsburgers.png" />
       <h1>Neighbor Stores</h1>
-      <Search />
+      <Search search={searchTerm} onSearchChange={setSearchTerm}/>
       <NewStoreForm onFormSubmit={addStore} />
-      <StoreList stores={storesArr} />
+      <StoreList stores={storesToDisplay} />
     </div>
   );
 }
