@@ -41,6 +41,24 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "delphinium",
+      "image": "mypic.jpg",
+      "price": 12,
+      "id": 8
+    },
+    {
+      "name": "crabapple",
+      "image": "./images/calathea.jpg",
+      "price": 14,
+      "id": 9
+    },
+    {
+      "name": "iris",
+      "image": "./images/pothos.jpg",
+      "price": 14.99,
+      "id": 10
     }
   ]
 }
