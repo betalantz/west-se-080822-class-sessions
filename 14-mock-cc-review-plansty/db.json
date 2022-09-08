@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Aloe",
       "image": "./images/aloe.jpg",
-      "price": 15.99
+      "price": 12.99
     },
     {
       "id": 2,
       "name": "ZZ Plant",
       "image": "./images/zz-plant.jpg",
-      "price": 25.98
+      "price": 22.95
     },
     {
       "id": 3,
@@ -34,31 +34,13 @@
       "id": 6,
       "name": "Monstera Deliciosa",
       "image": "./images/monstera.jpg",
-      "price": 25.99
+      "price": 14.25
     },
     {
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
-    },
-    {
-      "name": "delphinium",
-      "image": "mypic.jpg",
-      "price": 12,
-      "id": 8
-    },
-    {
-      "name": "crabapple",
-      "image": "./images/calathea.jpg",
-      "price": 14,
-      "id": 9
-    },
-    {
-      "name": "iris",
-      "image": "./images/pothos.jpg",
-      "price": 14.99,
-      "id": 10
     }
   ]
 }

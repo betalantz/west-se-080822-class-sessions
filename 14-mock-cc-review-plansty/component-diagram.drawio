@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="KXjzNXcerH3fcwBqWMyN" name="Page-1">
-        <mxGraphModel dx="637" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="677" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -55,10 +55,10 @@
                 <mxCell id="18" value="state: plantsArr" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="450" y="160" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="props: filteredPlants" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="19" value="props: filteredPlants, updatePlants, removePlant" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="560" y="220" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="props: plantObj" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="20" value="props: plantObj, updatePlants, removePlant" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="620" y="350" width="110" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="GET" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -90,6 +90,9 @@
                 </mxCell>
                 <mxCell id="32" value="state: inStock" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="700" y="415" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="state: price" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="450" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

@@ -18,6 +18,22 @@ function PlantPage() {
     setPlantsArr([newPlantObj, ...plantsArr])
   }
 
+  function updatePlants(updatedPlant){
+    console.log('updatedPlant: ', updatedPlant);
+    // const updatedPlants = plantsArr.map(plant => {
+    //   if (plant === updatedPlant) return updatedPlant;
+    //   return plant;
+    // })
+    const updatedPlants = plantsArr.map(plant => plant.id === updatedPlant.id ? updatedPlant: plant)
+    setPlantsArr(updatedPlants)
+  }
+  
+  function removePlant(plantId){
+    console.log('plantId: ', plantId);
+    const updatedPlants = plantsArr.filter(plant => plant.id !== plantId)
+    setPlantsArr(updatedPlants)
+  }
+
   const filteredPlants = plantsArr.filter(plant => plant.name.toLowerCase().includes(searchString.toLowerCase()))
   // const filteredPlants = plantsArr.filter(plant => plant.name.toLowerCase().includes(searchString.toLowerCase()) || plant.price.toString().includes(searchString))
   
@@ -25,7 +41,11 @@ function PlantPage() {
     <main>
       <NewPlantForm onSubmitPlant={addPlant}/>
       <Search search={searchString} onSearchChange={setSearchString} />
-      <PlantList plants={filteredPlants}/>
+      <PlantList 
+        plants={filteredPlants} 
+        onUpdatePrice={updatePlants}
+        onDeletePlant={removePlant}
+      />
     </main>
   );
 }
