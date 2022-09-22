@@ -3,18 +3,20 @@ require 'pry'
 class CashRegister
 
     attr_reader :discount
-    attr_accessor :total, :items, :last_tx
+    attr_accessor :total, :items, :transactions
 
     def initialize(discount = 0)
         @discount = discount
         @total = 0
         @items = []
+        @transactions = []
     end
 
     def add_item(title, price, quantity = 1)
-        self.last_tx = price * quantity
-        self.total += self.last_tx
+        transaction = price * quantity
+        self.total += transaction
         quantity.times { self.items << title }
+        self.transactions << transaction
         # @total = @total + (price * quantity)
     end
 
@@ -29,7 +31,7 @@ class CashRegister
     end
 
     def void_last_transaction
-        self.total -= self.last_tx
+        self.total -= self.transactions.pop
     end
 
 end
