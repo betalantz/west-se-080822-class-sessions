@@ -50,8 +50,8 @@ Create your migrations.
 
 ## Audition
 
-- `Audition#role` returns an instance of role associated with this audition
-- `Audition#call_back` will change the the hired attribute to `true`
+- [x] `Audition#role` returns an instance of role associated with this audition
+- [x] `Audition#call_back` will change the the hired attribute to `true`
 
 ## Roles
 
