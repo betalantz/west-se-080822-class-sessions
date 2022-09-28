@@ -64,12 +64,12 @@ Create your migrations.
 
 ## Alien
 
-- `Alien#visitations` returns all the visitations that alien has been involved in
-- `Alien#earthlings` returns every earthling the alien has visited
-- `Alien#visit(earthling)` takes in an instance of an earthling and creates a visitation linking that earthling and alien for today's date
-- `Alien#total_light_years_traveled` returns the light years from the alien's home planet multiplied by the number of visitations for that alien ... times two (because they have to travel both ways right?)
-- `Alien.most_frequent_visitor` returns the alien with the most visitations
-- `Alien.average_light_years_to_home_planet` returns the average distance for all aliens to their home planets
+- [x] `Alien#visitations` returns all the visitations that alien has been involved in
+- [x] `Alien#earthlings` returns every earthling the alien has visited
+- [x] `Alien#visit(earthling)` takes in an instance of an earthling and creates a visitation linking that earthling and alien for today's date
+- [x] `Alien#total_light_years_traveled` returns the light years from the alien's home planet multiplied by the number of visitations for that alien ... times two (because they have to travel both ways right?)
+- [x] `Alien.most_frequent_visitor` returns the alien with the most visitations
+- [x] `Alien.average_light_years_to_home_planet` returns the average distance for all aliens to their home planets
 
 ## Visitation
 
