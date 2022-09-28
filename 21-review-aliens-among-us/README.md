@@ -73,5 +73,5 @@ Create your migrations.
 
 ## Visitation
 
-- `Visitation#alien` returns the alien involved in the visitation
-- `Visitation#earthling` returns the earthling involved in the visitation
+- [x] `Visitation#alien` returns the alien involved in the visitation
+- [x] `Visitation#earthling` returns the earthling involved in the visitation
