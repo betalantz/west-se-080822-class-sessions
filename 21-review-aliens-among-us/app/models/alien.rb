@@ -7,7 +7,8 @@ class Alien < ActiveRecord::Base
 
     def self.average_light_years_to_home_planet
         # add all of the light_years_to_home_planet and divde the sum by # of aliens
-        self.sum(:light_years_to_home_planet) / self.all.length.to_f
+        # self.all.sum{|alien| alien.light_years_to_home_planet} / self.all.length.to_f # using vanilla Ruby
+        self.sum(:light_years_to_home_planet) / self.all.length.to_f # using AR .sum
     end
 
     has_many :visitations
