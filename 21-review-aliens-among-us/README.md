@@ -57,10 +57,10 @@ Create your migrations.
 
 ## Earthling
 
-- `Earthling#visitations` returns all the visitations for an earthling
-- `Earthling#aliens` returns every alien that has visited that earthling
-- `Earthling#full_name` returns the combination of the human's first name and last name
-- `Earthling.filter_by_job(job)` takes in a job as a string and returns all earthlings with the specified job
+- [x] `Earthling#visitations` returns all the visitations for an earthling
+- [x] `Earthling#aliens` returns every alien that has visited that earthling
+- [x] `Earthling#full_name` returns the combination of the human's first name and last name
+- [x] `Earthling.filter_by_job(job)` takes in a job as a string and returns all earthlings with the specified job
 
 ## Alien
 
