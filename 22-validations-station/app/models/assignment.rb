@@ -15,9 +15,7 @@ class Assignment < ApplicationRecord
   end
 
   def is_too_long
-    if self.duration > 20
-      errors.add(:duration, "can't be longer than 20 minutes")
-    end
+    errors.add(:duration, "can't be longer than 20 minutes") if self.duration > 20
   end
 
   def is_available
