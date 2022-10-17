@@ -53,7 +53,7 @@ As a user, I can:
 
 - [x] Create, read, update and delete **Apartments**
 - [x] Create, read, update and delete **Tenants**
-- [] Create and delete **Lease**
+- [x] Create and delete **Lease**
 
 Follow good API design practices and use RESTful routing conventions. Make sure
 to handle errors and invalid data by returning the appropriate status code along
