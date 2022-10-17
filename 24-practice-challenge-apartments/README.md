@@ -27,6 +27,8 @@ following database structure. You will have three models (and their
 corresponding tables), `Apartment`, `Tenant` and `Lease`, with the following
 relationships:
 
+Tenant --< Lease >--Apartment
+
 - A tenant has many apartments and has many leases
 - An apartment has many tenants and has many leases
 - A lease belongs to an apartment and belongs to a tenant
