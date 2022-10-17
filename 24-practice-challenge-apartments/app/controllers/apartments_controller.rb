@@ -11,12 +11,12 @@ class ApartmentsController < ApplicationController
     end
     
     def create
-        apartment = Apartment.create(apartment_params)
+        apartment = Apartment.create!(apartment_params)
         render json: apartment, status: :created
     end
     
     def update
-        @apartment.update(apartment_params)
+        @apartment.update!(apartment_params)
         render json: @apartment, status: :accepted
     end
     
