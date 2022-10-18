@@ -93,7 +93,7 @@ A user should be able to:
     }
     ```
 
-- **View one specific client**
+- [x] **View one specific client**
 
   - if `Client` exists, return JSON data for the Client
   - else return error with a status code

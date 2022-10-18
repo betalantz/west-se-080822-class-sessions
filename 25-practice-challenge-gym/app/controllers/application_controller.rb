@@ -12,4 +12,12 @@ class ApplicationController < ActionController::API
     def render_not_found_response(exception)
         render json: { "error": "#{exception.model} not found"}, status: :not_found
     end
+
+    def resource_class
+        controller_path.classify.constantize
+    end
+
+    def find_resource
+        @resource = resource_class.find(params[:id])
+    end
 end
