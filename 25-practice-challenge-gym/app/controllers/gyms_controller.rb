@@ -1,6 +1,6 @@
 class GymsController < ApplicationController
 
-    # before_action :find_gym
+    # before_action :find_gym # abstracting this onto ApplicationController
     before_action :find_resource, except: :index
 
     def index
@@ -8,7 +8,7 @@ class GymsController < ApplicationController
     end
 
     def show
-        render json: @resource
+        render json: @resource, serializer: GymWithClientsSerializer #not in deliverables
     end
 
     def update
