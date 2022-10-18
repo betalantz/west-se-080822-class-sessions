@@ -64,17 +64,17 @@ Write migrations to create the following tables:
 
 A user should be able to:
 
-- **Create a new membership**
+- [x] **Create a new membership**
 
   - New membership require a gym_id, client_id, and membership charge.
   - Validation: A client can have only one membership with gym
 
-- **View one specific gym**
+- [x] **View one specific gym**
 
   - if `Gym` exists, return JSON data for the gym
   - else return error with a status code
 
-- **Delete a gym**
+- [x] **Delete a gym**
 
   - If the `Gym` exists, it should be removed from the database, along with
     any `Membership`s that are associated with it (a `Membership` belongs
