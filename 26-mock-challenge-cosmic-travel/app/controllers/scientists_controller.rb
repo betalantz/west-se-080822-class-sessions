@@ -1,6 +1,6 @@
 class ScientistsController < ApplicationController
 
-    before_action :find_scientist, only: :show
+    before_action :find_scientist, only: [:show, :update, :destroy]
 
     def index
         render json: Scientist.all
@@ -13,6 +13,15 @@ class ScientistsController < ApplicationController
     def create
         scientist = Scientist.create!(scientist_params)
         render json: scientist, status: :created
+    end
+
+    def update
+        @scientist.update!(scientist_params)
+        render json: @scientist, status: :accepted
+    end
+
+    def destroy
+
     end
 
     private
