@@ -21,7 +21,8 @@ class ScientistsController < ApplicationController
     end
 
     def destroy
-
+        @scientist.destroy
+        head :no_content
     end
 
     private
