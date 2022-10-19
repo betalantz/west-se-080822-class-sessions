@@ -76,12 +76,12 @@ $ rails db:migrate db:seed
 
 ## Validations
 
-Add validations to the `Camper` model:
+- [x] Add validations to the `Camper` model:
 
 - must have a `name`
 - must have an `age` between 8 and 18
 
-Add validations to the `Signup` model:
+- [x] Add validations to the `Signup` model:
 
 - must have a `time` between 0 and 23 (referring to the hour of day for the
   activity)
