@@ -1,14 +1,24 @@
 import React from 'react'
-import { adoptPet } from '../atoms'
-import { useRecoilValue } from 'recoil'
+import { petsState } from '../atoms'
+import { useSetRecoilState } from 'recoil'
 
 export default function Pet({pet}) {
 
-     
+    const setPets = useSetRecoilState(petsState)
    
-    function handleAdoptedClick() {
+    const handleAdoptedClick = async () => {
+      const config = {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ isAdopted: true})
+      }
+      const response = await fetch(`http://localhost:3001/pets/${pet.id}`, config)
+      const updatedPet = await response.json()
+      setPets(prevPets => prevPets.map(pp => pp.id === pet.id ? updatedPet : pp))
     }
-
+    
     
     
     return (
